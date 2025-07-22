@@ -2,100 +2,128 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>¡Aprueba YA el Carnet de Conducir!</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ApruebaYA – Tests de conducir</title>
   <style>
-    body {
-      font-family: sans-serif;
+    :root {
+      --azul: #2d5fff;
+      --gris-claro: #f4f4f4;
+      --gris-oscuro: #333;
+    }
+
+    * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      background-color: #f5f5f5;
-      color: #333;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--gris-claro);
+      color: var(--gris-oscuro);
+      line-height: 1.6;
     }
 
     header {
-      background-color: #1a73e8;
+      background-color: var(--azul);
       color: white;
-      padding: 2rem 1rem;
+      padding: 2rem;
       text-align: center;
     }
 
     header h1 {
-      margin: 0;
-      font-size: 2.5rem;
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
     }
 
     header p {
-      font-size: 1.2rem;
+      font-size: 1rem;
+      opacity: 0.9;
     }
 
     nav {
-      text-align: center;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
       margin: 2rem 0;
+      gap: 1rem;
     }
 
     nav a {
-      margin: 0 1rem;
+      background-color: white;
+      border: 1px solid var(--azul);
+      color: var(--azul);
       padding: 0.8rem 1.5rem;
-      background-color: #1a73e8;
-      color: white;
       text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
+      border-radius: 6px;
+      transition: all 0.2s ease;
+      font-weight: 500;
     }
 
     nav a:hover {
-      background-color: #1256b8;
+      background-color: var(--azul);
+      color: white;
     }
 
     section {
-      max-width: 800px;
+      max-width: 700px;
       margin: auto;
       padding: 2rem;
       background-color: white;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    section h2 {
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+
+    section p {
+      margin-bottom: 1rem;
     }
 
     footer {
       text-align: center;
       padding: 1rem;
-      background-color: #222;
-      color: #ccc;
+      background-color: #e5e5e5;
+      color: #555;
       margin-top: 2rem;
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>🚗 ¡Aprueba YA!</h1>
-    <p>Tests reales, trucos secretos y simulacros del examen DGT. 100% gratis.</p>
+    <h1>ApruebaYA</h1>
+    <p>Tests de conducir, simulacros y trucos para aprobar la DGT.</p>
   </header>
 
   <nav>
-    <a href="tests.html">📝 Tests</a>
-    <a href="trucos.html">🎯 Trucos</a>
-    <a href="simulacro.html">🎮 Simulacro</a>
-    <a href="contacto.html">📬 Contacto</a>
+    <a href="tests.html">Tests</a>
+    <a href="trucos.html">Trucos</a>
+    <a href="simulacro.html">Simulacro</a>
+    <a href="contacto.html">Contacto</a>
   </nav>
 
   <section>
-    <h2>¿Estás listo para sacarte el carnet?</h2>
+    <h2>Bienvenido a ApruebaYA</h2>
     <p>
-      En <strong>ApruebaYA</strong> tienes acceso a miles de preguntas reales del examen teórico de la DGT, organizadas por tema y dificultad.
+      Aquí encontrarás cientos de preguntas reales del examen teórico de la DGT organizadas por temas, dificultad y tipo.
     </p>
     <p>
-      Practica a tu ritmo, repasa los errores más comunes y realiza simulacros como si fuera el examen oficial. ¡Y todo 100% gratis!
+      Además, recopilamos los errores más comunes, trucos psicológicos para recordar normas, y simulacros completos como si estuvieras en el examen real.
     </p>
     <p>
-      Empieza ahora pulsando el botón <strong>"Tests"</strong> de arriba.
+      Empieza ahora pulsando "Tests" en el menú de arriba.
     </p>
   </section>
 
   <footer>
-    © 2025 ApruebaYA | Página creada por Santiago Lanzarote 🚀
+    © 2025 ApruebaYA – Página creada por Santiago Lanzarote
   </footer>
 
 </body>
 </html>
+
