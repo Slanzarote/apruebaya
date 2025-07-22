@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ApruebaYA – Tests de conducir</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ApruebaYA – Tests de Conducir</title>
   <style>
     :root {
-      --azul: #2d5fff;
-      --gris-claro: #f4f4f4;
-      --gris-oscuro: #333;
+      --fondo: #ffffff;
+      --texto: #1f1f1f;
+      --gris: #f2f2f2;
+      --gris-medio: #cccccc;
+      --negro-suave: #333333;
     }
 
     * {
@@ -18,16 +20,17 @@
     }
 
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: var(--gris-claro);
-      color: var(--gris-oscuro);
+      font-family: 'Segoe UI', Roboto, sans-serif;
+      background-color: var(--gris);
+      color: var(--texto);
       line-height: 1.6;
     }
 
     header {
-      background-color: var(--azul);
-      color: white;
+      background-color: var(--fondo);
+      color: var(--negro-suave);
       padding: 2rem;
+      border-bottom: 1px solid var(--gris-medio);
       text-align: center;
     }
 
@@ -38,22 +41,22 @@
 
     header p {
       font-size: 1rem;
-      opacity: 0.9;
+      color: #666;
     }
 
     nav {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      margin: 2rem 0;
       gap: 1rem;
+      margin: 2rem 0;
     }
 
     nav a {
-      background-color: white;
-      border: 1px solid var(--azul);
-      color: var(--azul);
-      padding: 0.8rem 1.5rem;
+      padding: 0.8rem 1.4rem;
+      border: 1px solid var(--gris-medio);
+      background-color: var(--fondo);
+      color: var(--negro-suave);
       text-decoration: none;
       border-radius: 6px;
       transition: all 0.2s ease;
@@ -61,33 +64,33 @@
     }
 
     nav a:hover {
-      background-color: var(--azul);
-      color: white;
+      background-color: #eaeaea;
     }
 
     section {
-      max-width: 700px;
+      max-width: 720px;
       margin: auto;
       padding: 2rem;
-      background-color: white;
+      background-color: var(--fondo);
       border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
     }
 
     section h2 {
       margin-bottom: 1rem;
-      font-size: 1.5rem;
+      font-size: 1.4rem;
     }
 
     section p {
       margin-bottom: 1rem;
+      font-size: 1rem;
     }
 
     footer {
       text-align: center;
       padding: 1rem;
-      background-color: #e5e5e5;
-      color: #555;
+      background-color: #f0f0f0;
+      color: #666;
       margin-top: 2rem;
       font-size: 0.9rem;
     }
@@ -97,7 +100,7 @@
 
   <header>
     <h1>ApruebaYA</h1>
-    <p>Tests de conducir, simulacros y trucos para aprobar la DGT.</p>
+    <p>Tests de conducir, simulacros y trucos para aprobar el examen de la DGT.</p>
   </header>
 
   <nav>
@@ -110,20 +113,21 @@
   <section>
     <h2>Bienvenido a ApruebaYA</h2>
     <p>
-      Aquí encontrarás cientos de preguntas reales del examen teórico de la DGT organizadas por temas, dificultad y tipo.
+      En esta página encontrarás cientos de preguntas reales del examen teórico de conducir, organizadas por temas y dificultad.
     </p>
     <p>
-      Además, recopilamos los errores más comunes, trucos psicológicos para recordar normas, y simulacros completos como si estuvieras en el examen real.
+      Accede a simulacros completos, repasa tus errores y descubre los trucos más útiles para aprobar el carnet a la primera.
     </p>
     <p>
-      Empieza ahora pulsando "Tests" en el menú de arriba.
+      Pulsa en "Tests" para comenzar ahora mismo.
     </p>
   </section>
 
   <footer>
-    © 2025 ApruebaYA – Página creada por Santiago Lanzarote
+    © 2025 ApruebaYA · Página desarrollada por Santiago Lanzarote
   </footer>
 
 </body>
 </html>
+
 
