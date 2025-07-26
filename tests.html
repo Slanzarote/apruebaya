@@ -16,7 +16,6 @@
     h1 {
       text-align: center;
       margin-bottom: 2rem;
-      color: #ffffff;
     }
 
     .test-container {
@@ -24,8 +23,8 @@
       margin: auto;
       background-color: #1e1e1e;
       padding: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(255,255,255,0.05);
     }
 
     .question {
@@ -35,7 +34,6 @@
     .question h2 {
       font-size: 1rem;
       margin-bottom: 0.5rem;
-      color: #ffffff;
     }
 
     label {
@@ -52,14 +50,13 @@
       margin-top: 2rem;
       font-weight: bold;
       text-align: center;
-      color: #90ee90;
     }
 
     button {
       display: block;
       margin: 2rem auto 0;
       padding: 0.8rem 2rem;
-      background-color: #444;
+      background-color: #333;
       color: white;
       border: none;
       border-radius: 6px;
@@ -68,7 +65,7 @@
     }
 
     button:hover {
-      background-color: #666;
+      background-color: #555;
     }
   </style>
 </head>
@@ -76,72 +73,139 @@
 
   <div class="test-container">
     <h1>Test de conducir</h1>
+
     <form id="formulario">
 
-      <!-- Preguntas (33) -->
-      <!-- Todas las preguntas se repiten con estructura tipo test (3 opciones) -->
-      <!-- Aquí mostramos 3 ejemplos, el resto se repite similar con distinto número -->
-      <div class="question">
-        <h2>1. ¿Cuál es la tasa máxima de alcohol permitida en aire espirado para un conductor novel?</h2>
-        <label><input type="radio" name="q1" value="a" /> 0,15 mg/l</label>
-        <label><input type="radio" name="q1" value="b" /> 0,25 mg/l</label>
-        <label><input type="radio" name="q1" value="c" /> 0,30 mg/l</label>
-      </div>
+      <!-- GENERADAS AUTOMÁTICAMENTE -->
 
-      <div class="question">
-        <h2>2. ¿Qué debe hacer si un semáforo está en rojo pero un agente da paso?</h2>
-        <label><input type="radio" name="q2" value="a" /> Esperar a que el semáforo se ponga en verde</label>
-        <label><input type="radio" name="q2" value="b" /> Hacer caso al agente y pasar</label>
-        <label><input type="radio" name="q2" value="c" /> Tocar el claxon para avisar</label>
-      </div>
+      <script>
+        const preguntas = [
+          {
+            texto: "¿Cuál es la tasa máxima de alcohol permitida en aire espirado para un conductor novel?",
+            opciones: ["0,15 mg/l", "0,25 mg/l", "0,30 mg/l"],
+            correcta: "0,15 mg/l"
+          },
+          {
+            texto: "¿Qué debe hacer si un semáforo está en rojo pero un agente da paso?",
+            opciones: ["Esperar a que el semáforo se ponga en verde", "Hacer caso al agente y pasar", "Tocar el claxon para avisar"],
+            correcta: "Hacer caso al agente y pasar"
+          },
+          {
+            texto: "¿Es obligatorio llevar chaleco reflectante en el vehículo?",
+            opciones: ["Sí, y debe estar al alcance del conductor", "Solo en caso de viajar de noche", "No es obligatorio"],
+            correcta: "Sí, y debe estar al alcance del conductor"
+          },
+          {
+            texto: "¿Cuál es la velocidad máxima en una vía urbana con plataforma única de calzada y acera?",
+            opciones: ["20 km/h", "30 km/h", "50 km/h"],
+            correcta: "20 km/h"
+          },
+          {
+            texto: "¿Qué indica una línea continua en el centro de la calzada?",
+            opciones: ["Prohibido adelantar", "Permite adelantar con precaución", "Fin de vía preferente"],
+            correcta: "Prohibido adelantar"
+          },
+          {
+            texto: "¿Cuándo se puede usar el claxon?",
+            opciones: ["Para saludar", "En caso de emergencia o evitar un accidente", "Para avisar en cruces"],
+            correcta: "En caso de emergencia o evitar un accidente"
+          },
+          {
+            texto: "¿Cuál es la edad mínima para obtener el permiso B?",
+            opciones: ["16 años", "17 años", "18 años"],
+            correcta: "18 años"
+          },
+          {
+            texto: "¿Qué documentos debe llevar obligatoriamente un conductor?",
+            opciones: ["Permiso de circulación y seguro", "Carnet, permiso y tarjeta ITV", "Solo el DNI"],
+            correcta: "Carnet, permiso y tarjeta ITV"
+          },
+          {
+            texto: "¿Qué significa una señal triangular con borde rojo y una bicicleta dentro?",
+            opciones: ["Fin de vía ciclista", "Peligro por presencia de ciclistas", "Obligación para ciclistas"],
+            correcta: "Peligro por presencia de ciclistas"
+          },
+          {
+            texto: "¿En qué casos está permitido circular marcha atrás?",
+            opciones: ["Para aparcar o maniobrar", "En cualquier caso", "Nunca"],
+            correcta: "Para aparcar o maniobrar"
+          },
+          {
+            texto: "¿Qué significa una luz amarilla intermitente en un semáforo?",
+            opciones: ["Prioridad absoluta", "Paso con precaución", "Prohibido el paso"],
+            correcta: "Paso con precaución"
+          },
+          {
+            texto: "¿Qué separación lateral debes dejar al adelantar a un ciclista?",
+            opciones: ["1,5 metros", "2 metros", "3 metros"],
+            correcta: "1,5 metros"
+          },
+          {
+            texto: "¿Cuánto tiempo de reacción promedio tiene un conductor?",
+            opciones: ["0,5 segundos", "1 segundo", "2 segundos"],
+            correcta: "1 segundo"
+          },
+          {
+            texto: "¿Qué se entiende por distancia de seguridad?",
+            opciones: ["Distancia a la que no se ve el coche de delante", "Distancia que permite frenar sin colisionar", "Distancia de visibilidad lateral"],
+            correcta: "Distancia que permite frenar sin colisionar"
+          },
+          {
+            texto: "¿Cuál es la señal que indica ‘stop’?",
+            opciones: ["Circular con fondo azul", "Triángulo rojo", "Octógono rojo"],
+            correcta: "Octógono rojo"
+          }
+        ];
 
-      <div class="question">
-        <h2>3. ¿Es obligatorio llevar chaleco reflectante en el vehículo?</h2>
-        <label><input type="radio" name="q3" value="a" /> Sí, y debe estar al alcance del conductor</label>
-        <label><input type="radio" name="q3" value="b" /> Solo en caso de viajar de noche</label>
-        <label><input type="radio" name="q3" value="c" /> No es obligatorio</label>
-      </div>
+        let html = "";
+        preguntas.forEach((pregunta, index) => {
+          const numero = index + 1;
+          html += `<div class="question"><h2>${numero}. ${pregunta.texto}</h2>`;
+          pregunta.opciones.forEach((opcion, idx) => {
+            const letra = String.fromCharCode(97 + idx); // a, b, c...
+            html += `<label><input type="radio" name="q${numero}" value="${opcion}"> ${opcion}</label>`;
+          });
+          html += `</div>`;
+        });
 
-      <!-- Las siguientes preguntas hasta la número 33 se generan igual cambiando el número -->
-      <!-- Puedes copiar y pegar las anteriores cambiando q4, q5... hasta q33 -->
-      <!-- Por simplicidad aquí te coloco una muestra condensada de cómo continuar -->
-
-      <!-- ... preguntas 4 a 33 similares ... -->
-
-      <div class="question">
-        <h2>33. ¿Es obligatorio llevar chaleco reflectante en el vehículo?</h2>
-        <label><input type="radio" name="q33" value="a" /> Sí, y debe estar al alcance del conductor</label>
-        <label><input type="radio" name="q33" value="b" /> Solo en caso de viajar de noche</label>
-        <label><input type="radio" name="q33" value="c" /> No es obligatorio</label>
-      </div>
+        document.write(html);
+      </script>
 
       <button type="button" onclick="corregir()">Corregir</button>
       <div id="resultado"></div>
-
     </form>
   </div>
 
   <script>
     function corregir() {
-      const respuestas = {
-        q1: "a", q2: "b", q3: "a", q4: "a", q5: "b", q6: "a", q7: "a", q8: "b", q9: "a", q10: "a",
-        q11: "b", q12: "a", q13: "a", q14: "b", q15: "a", q16: "a", q17: "b", q18: "a", q19: "a", q20: "b",
-        q21: "a", q22: "a", q23: "b", q24: "a", q25: "a", q26: "b", q27: "a", q28: "a", q29: "b", q30: "a",
-        q31: "a", q32: "b", q33: "a"
-      };
+      const respuestas = [
+        "0,15 mg/l",
+        "Hacer caso al agente y pasar",
+        "Sí, y debe estar al alcance del conductor",
+        "20 km/h",
+        "Prohibido adelantar",
+        "En caso de emergencia o evitar un accidente",
+        "18 años",
+        "Carnet, permiso y tarjeta ITV",
+        "Peligro por presencia de ciclistas",
+        "Para aparcar o maniobrar",
+        "Paso con precaución",
+        "1,5 metros",
+        "1 segundo",
+        "Distancia que permite frenar sin colisionar",
+        "Octógono rojo"
+      ];
 
       let correctas = 0;
-      let total = Object.keys(respuestas).length;
 
-      for (let pregunta in respuestas) {
-        let seleccionada = document.querySelector(`input[name="${pregunta}"]:checked`);
-        if (seleccionada && seleccionada.value === respuestas[pregunta]) {
+      respuestas.forEach((respuesta, i) => {
+        const seleccionada = document.querySelector(`input[name="q${i + 1}"]:checked`);
+        if (seleccionada && seleccionada.value === respuesta) {
           correctas++;
         }
-      }
+      });
 
-      document.getElementById("resultado").textContent =
-        `Has acertado ${correctas} de ${total} preguntas.`;
+      document.getElementById("resultado").textContent = `Has acertado ${correctas} de ${respuestas.length} preguntas.`;
     }
   </script>
 
